@@ -5,16 +5,15 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; 
-    background-image: url('weather.jpg'); 
-    background-size: cover; 
-    background-position: center; 
+    overflow: hidden; /* Ensure the animation stays within the viewport */
+    background-image: url('weather.jpg'); /* Replace 'weather.jpg' with your image URL */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
 }
 
 
 #weather-container {
-    background-color: rgba(255, 255, 255, 0.8); 
-    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -23,7 +22,7 @@ body {
 }
 
 h2, label, p {
-    color: #2d3748; 
+    color: #2d3748; /* Dark gray text */
     margin: 8px 0;
 }
 
@@ -32,15 +31,15 @@ input {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid #cbd5e0; 
+    border: 1px solid #cbd5e0; /* Light gray border */
     margin-top: 20px;
-    background-color: #edf2f7; 
-    color: #2d3748; 
+    background-color: #edf2f7; /* Light gray background */
+    color: #2d3748; /* Dark gray text */
 }
 
 button {
-    background-color: #4a5568; 
-    color: #fff; 
+    background-color: #4a5568; /* Gray button */
+    color: #fff; /* White text */
     padding: 12px;
     border: none;
     border-radius: 10px;
@@ -48,17 +47,17 @@ button {
     margin-top: 20px;
     width: 100px;
     font-size: 15px;
-    animation: pulse 1s infinite ease-in-out; 
+    animation: pulse 1s infinite ease-in-out; /* Button pulse animation */
 }
 
 button:hover {
-    background: #2d3748; 
+    background: #2d3748; /* Dark gray on hover */
 }
 
 #temp-div p {
     font-size: 60px;
     margin-top: -30px;
-    color: #2d3748; 
+    color: #2d3748; /* Dark gray text */
 }
 
 #weather-info {
@@ -68,10 +67,15 @@ button:hover {
 #weather-icon {
     width: 200px;
     height: 200px;
-    margin: 0 auto 10px;
+    margin: auto;
     margin-bottom: 0;
-    display: none;
+    display: block;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: center; /* Align text (if any) horizontally */
 }
+
+
 
 #hourly-forecast {
     margin-top: 50px;
@@ -88,7 +92,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
-    color: #2d3748; 
+    color: #2d3748; /* Dark gray text */
 }
 
 .hourly-item img {
@@ -98,7 +102,7 @@ button:hover {
 }
 
 #hourly-heading {
-    color: #2d3748; 
+    color: #2d3748; /* Dark gray text */
 }
 
 @keyframes pulse {
